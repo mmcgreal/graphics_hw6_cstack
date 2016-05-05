@@ -88,7 +88,7 @@ void parse_file ( char * filename,
   g.green = 255;
   g.blue = 0;
 
-struct stack * original = new_stack();
+  struct stack * original = new_stack();
 
   
   clear_screen(s);
@@ -243,7 +243,7 @@ struct stack * original = new_stack();
     }
     else if ( strncmp(line, "save", strlen(line)) == 0 ) {
       fgets(line, 255, f);
-      // line[strlen(line)-1] = '\0';
+      line[strlen(line)-1] = '\0';
       //clear_screen(s);
       //draw_polygons(pm, s, g);
       save_extension(s, line);

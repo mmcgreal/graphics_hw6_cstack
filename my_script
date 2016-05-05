@@ -1,0 +1,21 @@
+push
+translate
+250 350 0
+sphere
+200 20 50
+push
+translate
+50 0 0
+sphere
+0 0 50
+pop
+push
+sphere
+100 100 50
+pop
+push
+
+save
+circles.png
+display
+quit
